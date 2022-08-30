@@ -1,0 +1,223 @@
+:root {
+    --title-text-color:rgba(33, 33, 33, 1);
+    --pargraf-text-color:rgba(117, 117, 117, 1);
+    --dark-background:rgba(47, 48, 58, 1);
+    --white:rgba(255, 255, 255, 1);
+    --blue: rgba(33, 150, 243, 1);
+
+}
+
+body {
+    background-color: var(--white);
+    font-family: roboto, sans-serif;
+    letter-spacing: 0.03em;
+    line-height: 1.2;
+
+    max-width: 1600px;
+}
+
+footer {
+    max-width: 1600px;
+}
+
+button {
+    font-family: inherit;
+    cursor: pointer;
+    color: var(--title-text-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+/* цвет кнопки гпавной при ховере 188CE8 */
+
+button:hover,
+button:focus {
+    color: var(--white);
+    background-color: var(--blue)
+}
+
+body a {
+    text-decoration: none;
+}
+
+
+.logo {
+    color: var(--blue);
+    font-size: 26px;
+    font-family: raleway, sans-serif;   
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    
+}
+
+.logo-black {
+    color: rgba(0, 0, 0, 1);
+}
+
+.site-nav a {
+    color: var(--title-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+
+/* виділяємо поточну сторінку(студіо, портфоліо, контакти) */
+.site-nav a.current {
+    color: var(--blue);
+}
+
+.site-nav a:hover,
+.site-nav a:focus {
+    color: var(--blue);
+}
+
+.site-nav-contacts a {
+    color: var(--pargraf-text-color);
+}
+
+.title-section {
+    color: var(--white);
+    background-color: var(--dark-background);
+    text-align: center;
+    width: 1600px;
+    height: 600px;
+    
+}
+
+/* зробили всі літери великими text-transform: uppercase; */
+.text-big-title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;   
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.button-title {
+    background-color: var(--blue);
+    color: var(--white);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.06em;
+}
+
+.button-title:hover,
+.button-title:focus {
+    background-color: rgba(24, 140, 232, 1);
+}
+
+/* убираем маркеры в списках */
+ul {
+    list-style: none;
+}
+
+.benefits {
+    background-color: #F5F4FA;
+    font-size: 14px;
+}
+
+
+.benefits h3 {
+    color: var(--title-text-color);
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+}
+
+.benefits p {
+    color: var(--pargraf-text-color);
+    font-weight: 400;
+    line-height: 1.71; 
+}
+
+.our-works,
+.team-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+   }
+
+.team {
+    text-align: center;
+    background-color: var(--white);
+    font-size: 16px;
+    line-height: 1.19;
+}
+
+.team h3 {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--title-text-color);
+}  
+
+.team p {
+    color: var(--pargraf-text-color);
+    font-weight: 400;
+}
+
+footer {
+    background-color: var(--dark-background);
+    color: var(--white);  
+}
+
+.logo-white {
+    color: var(--white);
+}
+
+footer a {
+    color: var(--white);
+}
+
+.footer-address {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+}
+
+.foorer-mail,
+.foorer-phone {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+
+
+.portfolio h2 {
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+.portfolio p {
+    color: var(--pargraf-text-color);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.88;
+}
+
+
+
+
+
+
+/* позиціонування */
+.position {
+    display: flex;
+    flex-direction: column(row)
+}
+
+.portfolio {
+    display: flex;
+    flex-flow: row wrap;
+    width: 1170px;
+    height: 1360px;  
+}       
