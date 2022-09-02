@@ -1,8 +1,8 @@
 :root {
-    --title-text-color:rgba(33, 33, 33, 1);
-    --pargraf-text-color:rgba(117, 117, 117, 1);
-    --dark-background:rgba(47, 48, 58, 1);
-    --white:rgba(255, 255, 255, 1);
+    --title-text-color: rgba(33, 33, 33, 1);
+    --pargraf-text-color: rgba(117, 117, 117, 1);
+    --dark-background: rgba(47, 48, 58, 1);
+    --white: rgba(255, 255, 255, 1);
     --blue: rgba(33, 150, 243, 1);
 
 }
@@ -14,6 +14,13 @@ body {
     line-height: 1.2;
 
     max-width: 1600px;
+}
+
+.container {
+    margin-left: 15px;
+    margin-right: 15px;
+    width: 1200px;
+    outline: 2px solid tomato;
 }
 
 footer {
@@ -29,6 +36,11 @@ button {
     line-height: 1.62;
     text-align: center;
     letter-spacing: 0.03em;
+
+    border-radius: 4px;
+    padding: 10px 26px;
+    min-width: 216px;
+    border: none;
 }
 
 /* цвет кнопки гпавной при ховере 188CE8 */
@@ -47,15 +59,20 @@ body a {
 .logo {
     color: var(--blue);
     font-size: 26px;
-    font-family: raleway, sans-serif;   
+    font-family: raleway, sans-serif;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
-    
+
 }
 
 .logo-black {
     color: rgba(0, 0, 0, 1);
+}
+
+.site-nav {
+    margin: 0;
+    padding: 0;
 }
 
 .site-nav a {
@@ -64,6 +81,7 @@ body a {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+
 }
 
 /* виділяємо поточну сторінку(студіо, портфоліо, контакти) */
@@ -86,17 +104,24 @@ body a {
     text-align: center;
     width: 1600px;
     height: 600px;
-    
+    outline: 2px solid aqua;
+
+
 }
+
+.container-title-section {}
 
 /* зробили всі літери великими text-transform: uppercase; */
 .text-big-title {
     font-weight: 900;
     font-size: 44px;
-    line-height: 1.36;   
+    line-height: 1.36;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     text-align: center;
+
+    margin-top: 0;
+    margin-bottom: 30;
 }
 
 .button-title {
@@ -121,6 +146,8 @@ ul {
 .benefits {
     background-color: #F5F4FA;
     font-size: 14px;
+    outline: 2px solid aqua;
+    margin-top: 91px;
 }
 
 
@@ -134,7 +161,43 @@ ul {
 .benefits p {
     color: var(--pargraf-text-color);
     font-weight: 400;
-    line-height: 1.71; 
+    line-height: 1.71;
+}
+
+.our-advantages {
+    margin-top: 0;
+}
+
+.our-advantages h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+
+}
+
+.our-advantages p {
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+
+
+.datails {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.container-our-works {
+    margin-top: 94px;
+    outline: 2px solid aqua;
+}
+
+.our-works-foto {
+    margin-top: 50px;
+    margin-bottom: 0;
+}
+
+.our-works-foto li {
+    margin-bottom: 0;
 }
 
 .our-works,
@@ -143,7 +206,22 @@ ul {
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
-   }
+}
+
+.our-works {
+    margin-top: 0;
+}
+
+.team-title {
+    padding-top: 94px;
+
+}
+
+
+.container-team-title {
+    margin-top: 94px;
+    outline: 2px solid aqua;
+}
 
 .team {
     text-align: center;
@@ -156,16 +234,22 @@ ul {
     font-size: 16px;
     font-weight: 500;
     color: var(--title-text-color);
-}  
+}
 
 .team p {
     color: var(--pargraf-text-color);
     font-weight: 400;
 }
 
+.team-foto {
+    margin-top: 50px;
+    margin-bottom: 0;
+}
+
 footer {
     background-color: var(--dark-background);
-    color: var(--white);  
+    color: var(--white);
+    outline: 2px solid aqua;
 }
 
 .logo-white {
@@ -197,6 +281,7 @@ footer a {
     line-height: 2;
     letter-spacing: 0.06em;
 }
+
 .portfolio p {
     color: var(--pargraf-text-color);
     font-weight: 400;
@@ -219,5 +304,5 @@ footer a {
     display: flex;
     flex-flow: row wrap;
     width: 1170px;
-    height: 1360px;  
-}       
+    height: 1360px;
+}
