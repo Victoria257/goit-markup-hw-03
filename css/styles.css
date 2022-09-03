@@ -19,14 +19,32 @@ body {
 }
 
 .container {
-    margin-left: 215px;
-    margin-right: 215px;
+    margin-left:auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
     width: 1200px;
     outline: 2px solid tomato;
 }
+  
+.nav-container {
+    display: flex;
+    align-items: center;
 
-footer {
-    max-width: 1600px;
+}
+
+.nav-container-right {
+    margin-left: auto;
+    align-items: center;
+}
+
+.studio {
+    margin-right: 93px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
 }
 
 button {
@@ -38,11 +56,12 @@ button {
     line-height: 1.62;
     text-align: center;
     letter-spacing: 0.03em;
-
-    border-radius: 4px;
-    padding: 10px 26px;
-    min-width: 216px;
     border: none;
+    border-radius: 4px;
+    padding: 6px 22px;
+    
+    
+   
 }
 
 /* цвет кнопки гпавной при ховере 188CE8 */
@@ -50,7 +69,7 @@ button {
 button:hover,
 button:focus {
     color: var(--white);
-    background-color: var(--blue)
+    background-color: var(--blue);
 }
 
 body a {
@@ -70,11 +89,16 @@ body a {
 
 .logo-black {
     color: rgba(0, 0, 0, 1);
+    margin-right: 93px;
 }
 
 .site-nav {
     margin: 0;
     padding: 0;
+}
+
+.site-nav-container li {
+    margin-right: 50px;
 }
 
 .site-nav a {
@@ -98,6 +122,10 @@ body a {
 
 .site-nav-contacts a {
     color: var(--pargraf-text-color);
+}
+
+.site-nav-contacts li {
+    margin-left: 50px;
 }
 
 .title-section {
@@ -133,6 +161,8 @@ body a {
     letter-spacing: 0.06em;
 
     margin-top: 30px;
+    border: none;
+    padding: 10px 26px;
 }
 
 .button-title:hover,
@@ -269,6 +299,10 @@ footer a {
 }
 
 
+.portfolio-buttons{
+    margin-top: 94px;
+}
+
 
 .portfolio h2 {
     color: var(--title-text-color);
@@ -276,6 +310,7 @@ footer a {
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
+
 }
 
 .portfolio p {
@@ -285,20 +320,67 @@ footer a {
     line-height: 1.88;
 }
 
-
-
-
-
-
-/* позиціонування */
-.position {
-    display: flex;
-    flex-direction: column(row)
+.portfolio {
+    margin-top: 34px;
+    margin-bottom: 94px;
 }
 
-.portfolio {
+.portfolio ul {
+    margin-bottom: 0;
+}
+.under-foto {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 24px;
+    margin-right: 24px;
+}
+
+.container-portfolio-buttons {
+    margin-left: 512px;
+    margin-right: 513px;
+    width: 575px;
+    outline: 2px solid tomato;
+              
+}
+
+.list-buttons {
     display: flex;
+    flex-direction: column(row)
+    padding-left: 0;
+    margin-left: -8px;
+    
+    
+}
+
+.list-buttons >.item-button {
+    flex-basis: content;
+    width: 38px;
+    margin-left: 8px;
+    background-color: rgba(245, 244, 250, 1);
+    /* justify-content: space-between ; - можна вписувати замість flex-basis: content; щоб розподілити текст*/
+    
+}
+
+    
+
+/* ФОТО: ставимо елементи списку в строку (display: flex;) і робими перенос фото по строкам ( flex-wrap: wrap;)*/
+.card-set { 
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.card-set> .item{
+    margin-top: 30px;
+    margin-left: 30px;
+   
+}
+
+
+/*
+.portfolio ul {
+   
     flex-flow: row wrap;
     width: 1170px;
     height: 1360px;
 }
+*
