@@ -18,31 +18,13 @@ body {
     margin-bottom: 15px;
 }
 
-.container {
-    margin-left:auto;
-    margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
-    width: 1200px;
-    outline: 2px solid tomato;
-}
-  
-.nav-container {
-    display: flex;
-    align-items: center;
-
+body a {
+    text-decoration: none;
 }
 
-.nav-container-right {
-    margin-left: auto;
-    align-items: center;
-}
-
-.studio {
-    margin-right: 93px;
-}
-
+/* убираем маркеры в списках */
 ul {
+    list-style: none;
     margin: 0;
     padding: 0;
 }
@@ -59,23 +41,36 @@ button {
     border: none;
     border-radius: 4px;
     padding: 6px 22px;
-    
-    
-   
 }
 
 /* цвет кнопки гпавной при ховере 188CE8 */
-
 button:hover,
 button:focus {
     color: var(--white);
     background-color: var(--blue);
 }
 
-body a {
-    text-decoration: none;
+.container {
+    margin-left:auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 1200px;
+    outline: 2px solid none;
 }
 
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
 
 .logo {
     color: var(--blue);
@@ -84,7 +79,6 @@ body a {
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
-
 }
 
 .logo-black {
@@ -92,13 +86,35 @@ body a {
     margin-right: 93px;
 }
 
-.site-nav {
-    margin: 0;
-    padding: 0;
+.logo-white {
+    color: var(--white);
+}
+
+header {
+    border-bottom: 1px solid rgba(236, 236, 236, 1);
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.nav-container-left {
+    display: flex;
+    align-items: center;
 }
 
 .site-nav-container li {
     margin-right: 50px;
+}
+
+.site-nav {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
 }
 
 .site-nav a {
@@ -107,7 +123,6 @@ body a {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-
 }
 
 /* виділяємо поточну сторінку(студіо, портфоліо, контакти) */
@@ -118,6 +133,18 @@ body a {
 .site-nav a:hover,
 .site-nav a:focus {
     color: var(--blue);
+}
+
+.nav-container-right {
+    margin-left: auto;
+    align-items: center;
+}
+
+.site-nav-contacts {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
 }
 
 .site-nav-contacts a {
@@ -132,12 +159,10 @@ body a {
     color: var(--white);
     background-color: var(--dark-background);
     text-align: center;
-    outline: 2px solid aqua;
-
+    outline: 2px solid none;
     padding-top: 197px;
     padding-bottom: 203px;
 }
-
 
 /* зробили всі літери великими text-transform: uppercase; */
 .text-big-title {
@@ -147,9 +172,7 @@ body a {
     letter-spacing: 0.06em;
     text-transform: uppercase;
     text-align: center;
-
     margin: 0;
-   
 }
 
 .button-title {
@@ -159,7 +182,6 @@ body a {
     font-size: 16px;
     line-height: 30px;
     letter-spacing: 0.06em;
-
     margin-top: 30px;
     border: none;
     padding: 10px 26px;
@@ -170,59 +192,69 @@ body a {
     background-color: rgba(24, 140, 232, 1);
 }
 
-/* убираем маркеры в списках */
-ul {
-    list-style: none;
-}
-
 .benefits {
     font-size: 14px;
-    outline: 2px solid aqua;
-    margin-top: 91px;
+    outline: 2px solid none;
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
+.benefits-list {
+    display: flex;
+    justify-content: space-between;
+    margin-right: -30px;
+}
 
-.benefits h3 {
+.benefits-list li {
+    margin-right: 30px;
+}
+
+.benefits-list h3 {
     color: var(--title-text-color);
     font-weight: 700;
     line-height: 1.14;
     text-transform: uppercase;
-
     margin-top: 0;
     margin-bottom: 0;
 }
 
-.benefits p {
+.benefits-list p {
     color: var(--pargraf-text-color);
     font-weight: 400;
     line-height: 1.71;
-
     margin-top: 10px;
     margin-bottom: 0;
 }
 
-
-.datails {
-    margin-top: 0;
-    margin-bottom: 0;
-}
-
 .our-works {
-    margin-top: 94px;
-    outline: 2px solid aqua;
+    padding-bottom: 94px;
+    outline: 2px solid none;
 }
-
-.our-works ul {
-    margin-top: 50px;
-    margin-bottom: 0;
-}
-
 
 .our-works h2 {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
+    margin: 0;
+}
+
+.our-works-list {
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 0;
+    margin-right: -30px;
+    justify-content: space-between;
+}
+
+.our-works-list li {
+    margin-right: 30px;
+}
+
+.team-title {
+    padding-bottom: 94px;
+    outline: 2px solid none;
+    background-color: rgba(245, 244, 250, 1);
 }
 
 .team-title h2 {
@@ -230,20 +262,15 @@ ul {
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
-    
+    margin: 0;
 }
 
-.team-title {
-    margin-top: 94px;
-    padding-top: 94px;
-    padding-bottom: 94px;
-    outline: 2px solid aqua;
-    background-color: rgba(245, 244, 250, 1);
-}
-
-.team-title ul {
+.team-list {
+    display: flex;
     margin-top: 50px;
     margin-bottom: 0;
+    margin-right: -30px;
+    justify-content: space-between;
 }
 
 .team {
@@ -251,6 +278,7 @@ ul {
     background-color: var(--white);
     font-size: 16px;
     line-height: 1.19;
+    margin-right: 30px;
 }
 
 .team h3 {
@@ -264,26 +292,20 @@ ul {
     font-weight: 400;
 }
 
-
 footer {
     background-color: var(--dark-background);
     color: var(--white);
-    outline: 2px solid aqua;
-
+    outline: 2px solid none;
     padding-top: 60px;
     padding-bottom: 60px;
 }
 
-address {
-    margin-top: 20px;
-}
-
-.logo-white {
-    color: var(--white);
-}
-
 footer a {
     color: var(--white);
+}
+
+address {
+    margin-top: 20px;
 }
 
 .footer-address {
@@ -298,49 +320,12 @@ footer a {
     color: rgba(255, 255, 255, 0.6);
 }
 
-
-.portfolio-buttons{
-    margin-top: 94px;
-}
-
-
-.portfolio h2 {
-    color: var(--title-text-color);
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 2;
-    letter-spacing: 0.06em;
-
-}
-
-.portfolio p {
-    color: var(--pargraf-text-color);
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.88;
-}
-
-.portfolio {
-    margin-top: 34px;
-    margin-bottom: 94px;
-}
-
-.portfolio ul {
-    margin-bottom: 0;
-}
-.under-foto {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left: 24px;
-    margin-right: 24px;
-}
-
-.container-portfolio-buttons {
-    margin-left: 512px;
-    margin-right: 513px;
+.portfolio-buttons {
+    margin-left: auto;
+    margin-right: auto;
     width: 575px;
-    outline: 2px solid tomato;
-              
+    outline: 2px solid none;
+    margin-top: 94px;
 }
 
 .list-buttons {
@@ -348,39 +333,63 @@ footer a {
     flex-direction: column(row)
     padding-left: 0;
     margin-left: -8px;
-    
-    
 }
 
-.list-buttons >.item-button {
+.item-button {
     flex-basis: content;
     width: 38px;
     margin-left: 8px;
     background-color: rgba(245, 244, 250, 1);
     /* justify-content: space-between ; - можна вписувати замість flex-basis: content; щоб розподілити текст*/
-    
 }
 
-    
+.portfolio {
+    margin-top: 34px;
+    margin-bottom: 94px;
+}
 
 /* ФОТО: ставимо елементи списку в строку (display: flex;) і робими перенос фото по строкам ( flex-wrap: wrap;)*/
-.card-set { 
+.card-set {
     display: flex;
     flex-wrap: wrap;
-    
-}
-.card-set> .item{
-    margin-top: 30px;
-    margin-left: 30px;
-   
+    align-items: center;
+    align-items: center;
+    margin-right: -28px;
+    margin-top: -28px;
+    margin-bottom: 0;
 }
 
-
-/*
-.portfolio ul {
-   
-    flex-flow: row wrap;
-    width: 1170px;
-    height: 1360px;
+.item {
+    margin-top: 29px;
+    margin-right: 28px;
 }
-*
+
+.card {
+    display: flex;
+    align-content: flex-end;
+}
+
+.under-foto {
+    padding-top: 20px;
+    padding-bottom: 19px;
+    padding-left: 23px;
+    padding-right: 23px;
+    border-right: 1px solid rgba(238, 238, 238, 1);
+    border-left: 1px solid rgba(238, 238, 238, 1);
+    border-bottom: 1px solid rgba(238, 238, 238, 1);
+}
+
+.under-foto h2 {
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+
+.under-foto p {
+    color: var(--pargraf-text-color);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.88;
+}

@@ -8,17 +8,19 @@
     <title lang="en">WebStudio</title>
     <link
         href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-        rel="stylesheet" />
+        rel="stylesheet"
+     />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
     <header>
-        <div class="container nav-container">
-            <nav class="nav-container">
+        <div class="container navigation">
+            <nav class="nav-container-left">
                 <a href="./index.html" lang="en" class="logo">Web<span class="logo-black">Studio</span></a>
                 <div class="site-nav-container">
-                    <ul class="site-nav nav-container">
+                    <ul class="site-nav">
                         <li>
                             <a href="./index.html" class="current">Студія</a>
                         </li>
@@ -32,7 +34,7 @@
                 </div>
             </nav>
             <div class="nav-container-right">
-                <ul class="site-nav site-nav-contacts nav-container">
+                <ul class="site-nav-contacts">
                     <li>
                         <a href="mailto:info@example.com">info@example.com</a>
                     </li>
@@ -45,11 +47,10 @@
     </header>
 
     <main>
-        <div class="portfolio-buttons">
-            <h1 hidden>Портфоліо</h1>
-            <div class="container-portfolio-buttons">
+        <div class="container">
+            <div class="portfolio-buttons">
+                <h1 class="visually-hidden">Портфоліо</h1>
                 <ul class="list-buttons">
-
                     <li class="item-button">
                         <button type="button">Все</button>
                     </li>
@@ -70,103 +71,120 @@
                     <li class="item-button">
                         <button type="button">Маркетинг</button>
                     </li>
-
                 </ul>
             </div>
-        </div>
 
-        <div class="container portfolio">
-            <ul class="card-set">
-                <li class="item">
-                    <a href="#">
-                        <img src="./images/2/tehnokryak.jpg" alt="tehnokryak" width="370">
-                        <div class="under-foto">
-                            <h2>Технокряк</h2>
-                            <p>Маркетинг</p>
-                        </div>
-                    </a>
-                </li>
+            <div class="portfolio">
+                <ul class="card-set">
+                    <li class="item">
+                        <a href="#">
+                            <div class="card">
+                                <img src="./images/2/tehnokryak.jpg" alt="tehnokryak" width="370">
+                            </div>
+                            <div class="under-foto">
+                                <h2>Технокряк</h2>
+                                <p>Маркетинг</p>
+                            </div>
+                        </a>
+                    </li>
 
-                <li class="item">
-                    <a href="#">
-                        <img src="./images/2/poster-new.jpg" alt="poster" width="370">
-                        <div class="under-foto">
-                            <h2>Постер New Orlean vs Golden Star</h2>
-                            <p>Дизайн</p>
-                        </div>
-                    </a>
-                </li>
+                    <li class="item">
+                        <a href="#">
+                            <div class="card">
+                                <img src="./images/2/poster-new.jpg" alt="poster" width="370">
+                            </div>
+                            <div class="under-foto">
+                                <h2>Постер New Orlean vs Golden Star</h2>
+                                <p>Дизайн</p>
+                            </div>
+                        </a>
+                    </li>
 
-                <li class="item">
-                    <a href="#">
-                        <img src="./images/2/restoran.jpg" alt="restoran" width="370">
-                        <div class="under-foto">
-                            <h2>Ресторан Seafood</h2>
-                            <p>Додаток</p>
-                        </div>
-                    </a>
-                </li>
+                    <li class="item">
+                        <a href="#">
+                            <div class="card">
+                                <img src="./images/2/restoran.jpg" alt="restoran" width="370">
+                            </div>
+                            <div class="under-foto">
+                                <h2>Ресторан Seafood</h2>
+                                <p>Додаток</p>
+                            </div>
+                        </a>
+                    </li>
 
-                <li class="item">
-                    <a href="#">
-                        <img src="./images/2/prime.jpg" alt="prime" width="370">
-                        <div class="under-foto">
-                            <h2>Проєкт Prime</h2>
-                            <p>Маркетинг</p>
-                        </div>
-                    </a>
-                </li>
+                    <li class="item">
+                        <a href="#">
+                            <div class="card">
+                                <img src="./images/2/prime.jpg" alt="prime" width="370">
+                            </div>
+                            <div class="under-foto">
+                                <h2>Проєкт Prime</h2>
+                                <p>Маркетинг</p>
+                            </div>
+                        </a>
+                    </li>
 
-                <li class="item">
-                    <a href="#">
-                        <img src="./images/2/boxes.jpg" alt="boxes" width="370">
-                        <div class="under-foto">
-                            <h2>Проєкт Boxes</h2>
-                            <p>Додаток</p>
-                        </div>
-                    </a>
-                </li>
+                    <li class="item">
+                        <a href="#">
+                            <div class="card">
+                                <img src="./images/2/boxes.jpg" alt="boxes" width="370">
+                            </div>
+                            <div class="under-foto">
+                                <h2>Проєкт Boxes</h2>
+                                <p>Додаток</p>
+                            </div>
+                        </a>
+                    </li>
 
-                <li class="item">
-                    <a href="#">
-                        <img src="./images/2/inspiration.jpg" alt="inspiration" width="370">
-                        <div class="under-foto">
-                            <h2>Inspiration has no Borders</h2>
-                            <p>Веб-сайт</p>
-                        </div>
-                    </a>
-                </li>
+                    <li class="item">
+                        <a href="#">
+                            <div class="card">
+                                <img src="./images/2/inspiration.jpg" alt="inspiration" width="370">
+                            </div>
+                            <div class="under-foto">
+                                <h2>Inspiration has no Borders</h2>
+                                <p>Веб-сайт</p>
+                            </div>
+                        </a>
+                    </li>
 
-                <li class="item">
-                    <a href="#">
-                        <img src="./images/2/limited.jpg" alt="limited edition" width="370">
-                        <div class="under-foto">
-                            <h2>Видання Limited Edition</h2>
-                            <p>Дизайн</p>
-                        </div>
-                    </a>
-                </li>
+                    <li class="item">
+                        <a href="#">
+                            <div class="card">
+                                <img src="./images/2/limited.jpg" alt="limited edition" width="370">
+                            </div>
+                            <div class="under-foto">
+                                <h2>Видання Limited Edition</h2>
+                                <p>Дизайн</p>
+                            </div>
+                        </a>
+                    </li>
 
-                <li class="item">
-                    <a href="#">
-                        <img src="./images/2/lab.jpg" alt="proect lab" width="370">
-                        <div class="under-foto">
-                            <h2>Проект LAB</h2>
-                            <p>Маркетинг</p>
-                        </div>
-                    </a>
-                </li>
+                    <li class="item">
+                        <a href="#">
+                            <div class="card">
+                                <img src="./images/2/lab.jpg" alt="proect lab" width="370">
+                            </div>
+                            <div class="under-foto">
+                                <h2>Проект LAB</h2>
+                                <p>Маркетинг</p>
+                            </div>
+                        </a>
+                    </li>
 
-                <li class="item">
-                    <a href="#">
-                        <img src="./images/2/growing.jpg" alt="Growing Business" width="370">
-                        <div class="under-foto">
-                            <h2>Growing Business</h2>
-                            <p>Додаток</p>
-                        </div>
-                    </a>
-                </li>
-            </ul>
+                    <li class="item">
+                        <a href="#">
+                            <div class="card">
+                                <img src="./images/2/growing.jpg" alt="Growing Business" width="370">
+                            </div>
+                            <div class="under-foto">
+                                <h2>Growing Business</h2>
+                                <p>Додаток</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
 
     </main>
