@@ -348,21 +348,25 @@ address {
     margin-bottom: 94px;
 }
 
-/* ФОТО: ставимо елементи списку в строку (display: flex;) і робими перенос фото по строкам ( flex-wrap: wrap;)*/
+/* ФОТО: ставимо елементи списку в строку (display: flex;) і робими перенос фото по строкам ( flex-wrap: wrap;)
+   (margin-top: -28px;)-не можна ставити коли є колір фону (саме цієї секції card-set), тоді треба прибирати іншим способом */
 .card-set {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    align-items: center;
-    margin-right: -28px;
-    margin-top: -28px;
+    margin-top: -30px;
     margin-bottom: 0;
 }
 
 .item {
-    margin-top: 29px;
-    margin-right: 28px;
+    margin-top: 30px;
+    margin-right: 30px;
 }
+
+ /* ми кожному 3-му елементу прибираємо маржин справа*/
+ .item:nth-child(3n) {
+     margin-right: 0;
+ }
 
 .card {
     display: flex;
