@@ -13,7 +13,6 @@ body {
     letter-spacing: 0.03em;
     line-height: 1.2;
 
-    max-width: 1600px;
     margin-top: 15px;
     margin-bottom: 15px;
 }
@@ -130,8 +129,8 @@ header {
     color: var(--blue);
 }
 
-.site-nav a:hover,
-.site-nav a:focus {
+.navigation a:hover,
+.navigation a:focus {
     color: var(--blue);
 }
 
@@ -157,11 +156,14 @@ header {
 
 .title-section {
     color: var(--white);
-    background-color: var(--dark-background);
+    background-color: rgba(47, 48, 58, 1);
     text-align: center;
     outline: 2px solid none;
-    padding-top: 197px;
-    padding-bottom: 203px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+
+   
+    
 }
 
 /* зробили всі літери великими text-transform: uppercase; */
@@ -291,6 +293,7 @@ header {
     color: var(--pargraf-text-color);
     font-weight: 400;
 }
+
 
 footer {
     background-color: var(--dark-background);
